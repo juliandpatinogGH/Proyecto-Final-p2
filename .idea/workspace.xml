@@ -8,6 +8,7 @@
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ProyectoFinal.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Administrador.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Asiento.java" afterDir="false" />
@@ -74,7 +75,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "OscarProyect",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/ProyectoFinal/src",
     "onboarding.tips.debug.path": "C:/ProyectoFinal/src/Main.java",
