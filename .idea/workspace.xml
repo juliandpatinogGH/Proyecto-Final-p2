@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5d74714-d14b-42b5-bcd2-d953e0b09b8f" name="Changes" comment="chore: agregar .gitignore y estructura base de Maven (RF-048)">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Compra$CompraBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Compra$CompraBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/EntidadAfectada.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoAsiento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoCompraEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoCompraInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoEntrada.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoEvento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/MetodoPago.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Observable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Observador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Politicas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/SistemaEventos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/TipoCompra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/TipoEvento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/admin-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/admin-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/user-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/user-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/View/Main-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/View/admin-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/View/user-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/View/Main-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/View/admin-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/View/user-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="sarasofiasalazar" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,12 +55,12 @@
     &quot;assignee&quot;: &quot;juliandpatinogGH&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/juliandpatinogGH/Proyecto-Final-p2.git&quot;,
-    &quot;accountId&quot;: &quot;08067c0c-15a2-4b92-b9b2-6e6f459809e2&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/juliandpatinogGH/Proyecto-Final-p2.git",
+    "accountId": "b13081f7-1a34-4166-a06c-3eac5ceaf6a6"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -54,10 +76,13 @@
     "Maven.ProyectoFinal [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Julian-Rama",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "Sarasofiasalazar",
     "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/julia/OneDrive/Documentos/GitHub/Proyecto-Final-p2",
     "node.js.detected.package.eslint": "true",
@@ -71,6 +96,7 @@
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "configurable.group.build",
+    "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -115,6 +141,7 @@
       <workItem from="1779489184422" duration="22717000" />
       <workItem from="1779629895494" duration="14000" />
       <workItem from="1779631794455" duration="779000" />
+      <workItem from="1779634264315" duration="9375000" />
     </task>
     <task id="LOCAL-00001" summary="chore: agregar .gitignore y estructura base de Maven (RF-048)">
       <option name="closed" value="true" />
@@ -124,7 +151,39 @@
       <option name="project" value="LOCAL" />
       <updated>1779253141974</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="chore: agregar .gitignore y estructura base de Maven (RF-048)">
+      <option name="closed" value="true" />
+      <created>1779635429527</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779635429528</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore: agregar .gitignore y estructura base de Maven (RF-048)">
+      <option name="closed" value="true" />
+      <created>1779637589840</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1779637589840</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore: agregar .gitignore y estructura base de Maven (RF-048)">
+      <option name="closed" value="true" />
+      <created>1779642147638</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1779642147638</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore: agregar .gitignore y estructura base de Maven (RF-048)">
+      <option name="closed" value="true" />
+      <created>1779657667202</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1779657667202</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
