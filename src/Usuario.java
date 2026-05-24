@@ -13,4 +13,9 @@ public class Usuario extends Persona implements Observador {
     public void actualizar() {
         System.out.println("Usuario " + nombre + " notificado de cambios.");
     }
+
+    @Override
+    public String toString() {
+        return nombre;
+    }
 }

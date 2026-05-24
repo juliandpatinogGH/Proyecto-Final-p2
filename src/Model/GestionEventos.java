@@ -1,6 +1,7 @@
 package Model;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -17,8 +18,30 @@ public class GestionEventos implements Observable {
     private Administrador administradorActual;
     private List<Observador> observadores = new ArrayList<>();
 
-    private GestionEventos() {}
+    private GestionEventos() {
+        cargarDatosPrueba();
+    }
 
+    private void cargarDatosPrueba() {
+        Date hoy = new Date();
+
+        usuarios.add(new Usuario("U1", "Oscar Moreno", "oscar@gmail.com", "3001234567"));
+        usuarios.add(new Usuario("U2", "Ana García", "ana@gmail.com", "3109876543"));
+
+        Recinto r1 = new Recinto("R1", "Estadio Atanasio", "Cra 74", "Medellín");
+        Zona z1 = new Zona("Z1", "General", 200, 80000, "Occidental");
+        Zona z2 = new Zona("Z2", "VIP", 50, 150000, "Central");
+        r1.agregarZona(z1);
+        r1.agregarZona(z2);
+        recintos.add(r1);
+
+        Evento e1 = new Evento("E1", "Concierto Rock", "Música", "Gran noche de rock", "Medellín", hoy, hoy, 500, 80000, "No mascotas");
+        Evento e2 = new Evento("E2", "Festival Jazz", "Música", "Jazz internacional", "Bogotá", hoy, hoy, 300, 50000, "Solo mayores");
+        e1.setRecinto(r1);
+        e2.setRecinto(r1);
+        aforo.add(e1);
+        aforo.add(e2);
+    }
     public static GestionEventos getInstancia() {
         if (instancia == null) instancia = new GestionEventos();
         return instancia;
@@ -67,4 +90,5 @@ public class GestionEventos implements Observable {
 
     public Administrador getAdministradorActual() { return administradorActual; }
     public void setAdministradorActual(Administrador a) { this.administradorActual = a; }
+
 }

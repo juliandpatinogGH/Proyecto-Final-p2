@@ -55,4 +55,8 @@ public class Evento {
 
     public String getReglas() { return reglas; }
     public void setReglas(String reglas) { this.reglas = reglas; }
+
+    public void setRecinto(Recinto r1) {
+
+    }
 }

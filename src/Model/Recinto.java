@@ -11,7 +11,7 @@ public class Recinto {
     private String direccion;
     private List<Zona> zonas;
 
-    public Recinto(String idRecinto, String lugar, String nombre, String direccion, String ciudad) {
+    public Recinto(String idRecinto, String lugar, String nombre, String direccion) {
         this.idRecinto = idRecinto;
         this.lugar = lugar;
         this.nombre = nombre;

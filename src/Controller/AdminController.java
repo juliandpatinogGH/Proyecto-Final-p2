@@ -163,7 +163,7 @@ import javafx.scene.control.*;
             String ciudad = txtRecintoCiudad.getText();
             if (nombre.isEmpty()) { mostrarMensaje("Nombre es obligatorio."); return; }
             String id = "R" + (gestion.getRecintos().size() + 1);
-            gestion.agregarRecinto(new Recinto(id, "", nombre, dir, ciudad));
+            gestion.agregarRecinto(new Recinto(id, "", nombre, dir));
             cargarDatos();
             txtRecintoNombre.clear(); txtRecintoDireccion.clear(); txtRecintoCiudad.clear();
             mostrarMensaje("Recinto creado.");

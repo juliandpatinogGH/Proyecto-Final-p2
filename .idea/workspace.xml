@@ -6,6 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="e5d74714-d14b-42b5-bcd2-d953e0b09b8f" name="Changes" comment="chore: agregar .gitignore y estructura base de Maven (RF-048)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Evento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GestionEventos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GestionEventos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/GestionEventos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/GestionEventos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Recinto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Recinto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/UsuarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Asiento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Asiento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/Main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/Main-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,5 +194,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore: agregar .gitignore y estructura base de Maven (RF-048)" />
     <option name="LAST_COMMIT_MESSAGE" value="chore: agregar .gitignore y estructura base de Maven (RF-048)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/Model/Recinto.java</url>
+          <line>9</line>
+          <properties field="nombre" class="Model.Recinto" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
