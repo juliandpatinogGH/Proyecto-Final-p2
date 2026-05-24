@@ -5,23 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5d74714-d14b-42b5-bcd2-d953e0b09b8f" name="Changes" comment="chore: agregar .gitignore y estructura base de Maven (RF-048)">
+      <change afterPath="$PROJECT_DIR$/src/Model/PagoLinea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/PagoTransferencia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Evento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GestionEventos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GestionEventos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/GestionEventos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/GestionEventos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Recinto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Recinto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Main-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/UsuarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Asiento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Asiento.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/Main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/Main-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Administrador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Asiento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Compra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EntidadAfectada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entrada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EntradaBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EntradaDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EstadoAsiento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EstadoCancelada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EstadoCompraEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EstadoCompraInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EstadoConfirmada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EstadoCreada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EstadoEntrada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EstadoEvento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EstadoPagada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Evento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GestionEventos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Incidencia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MetodoPago.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Observador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pago.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PagoEfectivo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PagoLinea.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PagoTarjeta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PagoTransferencia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ParqueaderoDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Politicas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PreferencialDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProcesoPagoFacade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recinto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SeguroDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaEventos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaReal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tarifa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TipoCompra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TipoEvento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/user-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/user-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VipDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zona.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,20 +78,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "OscarProyect",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/ProyectoFinal/Pom.xml",
-    "onboarding.tips.debug.path": "C:/ProyectoFinal/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;OscarProyect&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/ProyectoFinal/Pom.xml&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/ProyectoFinal/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\ProyectoFinal\src" />
@@ -65,87 +108,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="ProyectoFinal" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="ProyectoFinal" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="ProyectoFinal" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="ProyectoFinal" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="ProyectoFinal" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="ProyectoFinal" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
