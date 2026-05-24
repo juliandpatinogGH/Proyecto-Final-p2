@@ -22,7 +22,6 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-<?import java.awt.Button?>
 <BorderPane xmlns:fx="http://javafx.com/fxml"
             fx:controller="Controller.AdminController"
             style="-fx-background-color: #0F1117;">
