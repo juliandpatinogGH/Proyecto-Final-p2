@@ -5,86 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5d74714-d14b-42b5-bcd2-d953e0b09b8f" name="Changes" comment="chore: agregar .gitignore y estructura base de Maven (RF-048)">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_21_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_21_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/UsuarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/Main-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/admin-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/user-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Administrador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Asiento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Compra$CompraBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Compra.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/EntidadAfectada.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Entrada.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/EntradaBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/EntradaDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/EstadoAsiento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/EstadoCancelada.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/EstadoCompraEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/EstadoCompraInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/EstadoConfirmada.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/EstadoCreada.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/EstadoEntrada.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/EstadoEvento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/EstadoIncidencia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/EstadoPagada.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/EstadoReembolsada.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Evento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/GestionEventos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Incidencia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/MetodoPago.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Observable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Observador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Pago.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/PagoEfectivo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/PagoLinea.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/PagoTarjeta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/PagoTransferencia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/ParqueaderoDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Persona.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Politicas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/PreferencialDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/ProcesoPagoFacade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Recinto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/SeguroDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/ServiciosAdicionales.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/SistemaEventos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/SistemaProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/SistemaReal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Tarifa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/TipoCompra.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/TipoEvento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/VipDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoFinal/Zona.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Compra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Compra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EntradaBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EntradaBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EstadoCancelada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EstadoCancelada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EstadoCompraInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EstadoCompraInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EstadoConfirmada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EstadoConfirmada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EstadoCreada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EstadoCreada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EstadoEvento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EstadoEvento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EstadoIncidencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EstadoIncidencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EstadoPagada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EstadoPagada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EstadoReembolsada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EstadoReembolsada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Evento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/GestionEventos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/GestionEventos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/PagoLinea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PagoPSE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/PagoTransferencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PagoNequi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Recinto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Recinto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Zona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Zona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="sarasofiasalazar" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -121,32 +47,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Unnamed.executor&quot;: &quot;Coverage&quot;,
-    &quot;Maven.ProyectoFinal [org.openjfx:javafx-maven-plugin:0.0.8:run].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Julian-Rama&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/julia/OneDrive/Documentos/GitHub/Proyecto-Final-p2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/ProyectoFinal/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Unnamed.executor": "Coverage",
+    "Maven.ProyectoFinal [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Julian-Rama",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/julia/OneDrive/Documentos/GitHub/Proyecto-Final-p2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/ProyectoFinal/src/Main.java",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "configurable.group.build",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\ProyectoFinal\src" />
@@ -187,6 +114,7 @@
       <updated>1779246440929</updated>
       <workItem from="1779489184422" duration="22717000" />
       <workItem from="1779629895494" duration="14000" />
+      <workItem from="1779631794455" duration="779000" />
     </task>
     <task id="LOCAL-00001" summary="chore: agregar .gitignore y estructura base de Maven (RF-048)">
       <option name="closed" value="true" />
