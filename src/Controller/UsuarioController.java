@@ -1,8 +1,9 @@
 package Controller;
 
 import Model.*;
+import Model.Enums.EstadoEntrada;
+import Model.Interfaces.MetodoPago;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 

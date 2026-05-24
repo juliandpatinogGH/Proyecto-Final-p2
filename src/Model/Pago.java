@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Interfaces.MetodoPago;
+
 import java.util.Date;
 
 public class Pago {

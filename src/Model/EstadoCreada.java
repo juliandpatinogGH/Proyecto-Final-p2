@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Interfaces.EstadoCompraInterface;
+
 public class EstadoCreada implements EstadoCompraInterface {
     @Override public void pagar(Compra compra) {
         System.out.println("Compra creada - > PAGADA.");

@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Interfaces.MetodoPago;
+
 public class PagoNequi implements MetodoPago {
     @Override
     public void pagar(double monto) {

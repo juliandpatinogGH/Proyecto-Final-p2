@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Enums.TipoCompra;
+
 public class Tarifa {
     private String idTarifa;
     private Zona zona;

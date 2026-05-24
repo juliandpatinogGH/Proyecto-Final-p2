@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Interfaces.EstadoCompraInterface;
+
 public class EstadoConfirmada implements EstadoCompraInterface {
     @Override public void pagar(Compra compra) {
         System.out.println("La compra ya fue confirmada.");

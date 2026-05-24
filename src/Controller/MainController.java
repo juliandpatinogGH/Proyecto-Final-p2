@@ -22,3 +22,4 @@ import javafx.scene.control.Label;
             resumenLabel.setText("Eventos: " + eventos + "  |  Usuarios: " + usuarios + "  |  Compras: " + compras);
         }
     }
+

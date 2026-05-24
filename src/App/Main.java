@@ -16,7 +16,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/main-view.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root, 1200, 800);
-        primaryStage.setTitle("EVENTIX - Plataforma de Gestión de Eventos");
+        primaryStage.setTitle("EVENTOS ONLINE - Plataforma de Gestión de Eventos");
         primaryStage.setScene(scene);
         primaryStage.show();
     }

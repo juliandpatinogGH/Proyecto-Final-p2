@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Interfaces.MetodoPago;
+
 public class ProcesoPagoFacade {
     private Compra compra;
     private MetodoPago metodoPago;

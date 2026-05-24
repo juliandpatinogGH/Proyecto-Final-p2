@@ -1,5 +1,8 @@
 package Model;
 
+import Model.Enums.TipoCompra;
+import Model.Interfaces.EstadoCompraInterface;
+
 import java.util.Date;
 import java.util.List;
 import java.util.ArrayList;

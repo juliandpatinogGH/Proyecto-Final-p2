@@ -1,5 +1,8 @@
 package Model;
 
+import Model.Interfaces.Observable;
+import Model.Interfaces.Observador;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;

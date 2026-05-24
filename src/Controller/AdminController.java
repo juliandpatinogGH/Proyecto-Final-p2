@@ -1,5 +1,8 @@
 package Controller;
 import Model.*;
+import Model.Enums.EntidadAfectada;
+import Model.Enums.EstadoAsiento;
+import Model.Enums.EstadoEvento;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.chart.*;
@@ -8,20 +11,34 @@ import javafx.scene.control.*;
     public class AdminController {
 
         // Usuarios
+        //Campo de texto mostrar el nombre,correo,telefono del usuario en el panel de administración
         @FXML private TextField txtAdminUsuarioNombre, txtAdminUsuarioCorreo, txtAdminUsuarioTelefono;
+
+        //Tabla que muestra la lista de usuarios registrados en el panel de administración.
         @FXML private TableView<Usuario> tablaAdminUsuarios;
+
+        //Columna de la tabla que muestra el ID único,nombre,correo de cada usuario.
         @FXML private TableColumn<Usuario, String> colAdminUsuarioId, colAdminUsuarioNombre, colAdminUsuarioCorreo;
 
         // Recintos
+        //Campo de texto mostrar el nombre,direccion,cuidad de recintos en el panel de administración
         @FXML private TextField txtRecintoNombre, txtRecintoDireccion, txtRecintoCiudad;
+
+        //Tabla que muestra la lista de recintos registrados en el panel de administración.
         @FXML private TableView<Recinto> tablaRecintos;
+        //Columna de la tabla que muestra el ID único,nombre,ciudad,capacidad de cada recinto.
         @FXML private TableColumn<Recinto, String> colRecintoId, colRecintoNombre, colRecintoCiudad, colRecintoCapacidad;
 
         // Zonas
+        //ComboBox para seleccionar el recinto al que pertenece la zona.
         @FXML private ComboBox<Recinto> comboRecintoZona;
+        //texto para mostrar el nombre,capacidad,precio de la zona.
         @FXML private TextField txtZonaNombre, txtZonaCapacidad, txtZonaPrecio;
+        //ComboBox para seleccionar el tipo de zona
         @FXML private ComboBox<String> comboTipoZona;
+        //tabla para las zonas registradas
         @FXML private TableView<Zona> tablaZonas;
+        //columna de la tabla que muestra el id,nombre,capacidad,precio,ocupacion
         @FXML private TableColumn<Zona, String> colZonaId, colZonaNombre, colZonaCapacidad, colZonaPrecio, colZonaOcupacion;
 
         // Asientos
@@ -57,10 +74,10 @@ import javafx.scene.control.*;
         @FXML private BarChart<String, Number> chartComprasEstado;
         @FXML private PieChart chartEventosEstado;
         @FXML private LineChart<String, Number> chartIngresos;
-
         private GestionEventos gestion = GestionEventos.getInstancia();
 
         @FXML
+        //inicializa controlador,invocando por java fx,configura tablas,carga datos a las tablas
         public void initialize() {
             configurarTablas();
             cargarDatos();
@@ -68,7 +85,6 @@ import javafx.scene.control.*;
             comboEstadoAsiento.setItems(FXCollections.observableArrayList(EstadoAsiento.values()));
             comboEventoEstado.setItems(FXCollections.observableArrayList(EstadoEvento.values()));
             comboTipoReporte.setItems(FXCollections.observableArrayList("Ventas por período", "Ocupación por zona", "Top eventos", "Tasa cancelación"));
-
             comboRecintoZona.getSelectionModel().selectedItemProperty().addListener((obs, old, r) -> {
                 if (r != null) cargarZonasDeRecinto(r);
             });

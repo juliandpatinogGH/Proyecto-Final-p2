@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Interfaces.SistemaEventos;
+
 public class SistemaReal implements SistemaEventos {
     @Override
     public void gestionarEventos() {
