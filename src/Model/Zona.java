@@ -1,11 +1,15 @@
 package Model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Zona {
     private String idZona;
     private String nombre;
     private int capacidad;
     private double precioBase;
     private String configAsientos;
+    private List<Asiento> asientos = new ArrayList<>();
 
     public Zona(String idZona, String nombre, int capacidad, double precioBase, String configAsientos) {
         this.idZona = idZona;
@@ -29,4 +33,16 @@ public class Zona {
 
     public String getConfigAsientos() { return configAsientos; }
     public void setConfigAsientos(String configAsientos) { this.configAsientos = configAsientos; }
+
+    public List<Asiento> getAsientos() { return asientos; }
+    public void agregarAsiento(Asiento a) { asientos.add(a); }
+    public void eliminarAsiento(Asiento a) { asientos.remove(a); }
+
+    public int getOcupacion() {
+        if (asientos.isEmpty()) return 0;
+        long vendidos = asientos.stream()
+                .filter(a -> a.getEstado() == EstadoAsiento.VENDIDO)
+                .count();
+        return (int)(vendidos * 100 / asientos.size());
+    }
 }

@@ -1,7 +1,7 @@
 package Model;
 
 public enum EstadoEvento {
-    BORRADO,
+    BORRADOR,
     PUBLICADO,
     PAUSADO,
     CANCELADO,

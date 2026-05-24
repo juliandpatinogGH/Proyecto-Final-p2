@@ -23,7 +23,7 @@ public class Compra implements Cloneable {
         this.fechaCreacion = new Date();
     }
 
-    // State pattern methods
+
     public void pagar()    { estado.pagar(this); }
     public void cancelar() { estado.cancelar(this); }
     public void confirmar(){ estado.confirmar(this); }
@@ -52,7 +52,7 @@ public class Compra implements Cloneable {
         calcularTotal();
     }
 
-    // Calcular total automaticamente
+
     public void calcularTotal() {
         this.total = 0;
         for (Entrada e : entradas) {
@@ -63,7 +63,7 @@ public class Compra implements Cloneable {
         }
     }
 
-    // Getters
+
     public String getIdCompra()                                  { return idCompra; }
     public Usuario getUsuario()                                  { return usuario; }
     public Evento getEvento()                                    { return evento; }

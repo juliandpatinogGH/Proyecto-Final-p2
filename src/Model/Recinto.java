@@ -6,17 +6,21 @@ import java.util.ArrayList;
 public class Recinto {
     private String idRecinto;
     private String lugar;
+    private String ciudad;
     private String nombre;
     private String direccion;
     private List<Zona> zonas;
 
-    public Recinto(String idRecinto, String lugar, String nombre, String direccion) {
+    public Recinto(String idRecinto, String lugar, String nombre, String direccion, String ciudad) {
         this.idRecinto = idRecinto;
         this.lugar = lugar;
         this.nombre = nombre;
         this.direccion = direccion;
         this.zonas = new ArrayList<>();
     }
+
+    public String getCiudad() { return ciudad; }
+    public void setCiudad(String ciudad) { this.ciudad = ciudad; }
 
     public String getIdRecinto() { return idRecinto; }
     public void setIdRecinto(String idRecinto) { this.idRecinto = idRecinto; }
@@ -34,4 +38,10 @@ public class Recinto {
     public void setZonas(List<Zona> zonas) { this.zonas = zonas; }
 
     public void agregarZona(Zona zona) { this.zonas.add(zona); }
+
+    public void eliminarZona(Zona z) { zonas.remove(z); }
+
+    public int getCapacidadTotal() {
+        return zonas.stream().mapToInt(Zona::getCapacidad).sum();
+    }
 }

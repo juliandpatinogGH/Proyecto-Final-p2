@@ -10,6 +10,8 @@ public class Evento {
     private String ciudad;
     private Date fecha;
     private Date hora;
+    private Recinto recinto;
+    private EstadoEvento estado = EstadoEvento.BORRADOR;
     private int aforo;
     private double precio;
     private String reglas;
@@ -23,6 +25,7 @@ public class Evento {
         this.ciudad = ciudad;
         this.fecha = fecha;
         this.hora = hora;
+        this.recinto = recinto;
         this.aforo = aforo;
         this.precio = precio;
         this.reglas = reglas;
@@ -48,6 +51,12 @@ public class Evento {
 
     public Date getHora() { return hora; }
     public void setHora(Date hora) { this.hora = hora; }
+
+    public Recinto getRecinto() { return recinto; }
+    public void setRecinto(Recinto r) { this.recinto = r; }
+
+    public EstadoEvento getEstado() { return estado; }
+    public void setEstado(EstadoEvento estado) { this.estado = estado; }
 
     public int getAforo() { return aforo; }
     public void setAforo(int aforo) { this.aforo = aforo; }

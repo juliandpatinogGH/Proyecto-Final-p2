@@ -13,4 +13,5 @@ public class EstadoCancelada implements EstadoCompraInterface {
     public void confirmar(Compra compra) {
         System.out.println("No se puede confirmar una compra cancelada.");
     }
+    @Override public String getNombreEstado() { return "CANCELADA"; }
 }
