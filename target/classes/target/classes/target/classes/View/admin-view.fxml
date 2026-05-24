@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<?import java.awt.Button?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller.AdminController"
+            style="-fx-background-color: #0F1117;">
+    <top>
+        <HBox spacing="12"
+              style="-fx-padding: 12 20;
+                     -fx-background-color: #161B2E;
+                     -fx-border-color: #1E2235;
+                     -fx-border-width: 0 0 1 0;
+                     -fx-alignment: center-left;">
+            <Button text="↺  Refrescar" onAction="#refrescarTodo"
+                    style="-fx-background-color: #1E2235;
+                           -fx-text-fill: #9CA3AF;
+                           -fx-font-size: 11;
+                           -fx-padding: 6 14;
+                           -fx-background-radius: 6;
+                           -fx-cursor: hand;" />
+            <Label fx:id="lblAdminMensaje"
+                   style="-fx-text-fill: #10B981; -fx-font-size: 11;" />
+        </HBox>
+    </top>
+
+    <center>
+        <TabPane tabClosingPolicy="UNAVAILABLE"
+                 style="-fx-background-color: #0F1117;">
+
+            <!-- TAB USUARIOS -->
+            <Tab text="  Usuarios  ">
+                <content>
+                    <VBox spacing="14" style="-fx-padding: 20; -fx-background-color: #0F1117;">
+                        <HBox spacing="10" style="-fx-alignment: center-left;">
+                            <TextField fx:id="txtAdminUsuarioNombre" promptText="Nombre" prefWidth="180"
+                                       style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                              -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                              -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                            <TextField fx:id="txtAdminUsuarioCorreo" promptText="Correo" prefWidth="200"
+                                       style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                              -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                              -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                            <TextField fx:id="txtAdminUsuarioTelefono" promptText="Teléfono" prefWidth="140"
+                                       style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                              -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                              -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                            <Button text="+ Crear" onAction="#crearUsuarioAdmin"
+                                    style="-fx-background-color: #6C63FF; -fx-text-fill: #FFFFFF;
+                                           -fx-font-weight: bold; -fx-font-size: 11;
+                                           -fx-padding: 7 16; -fx-background-radius: 6; -fx-cursor: hand;" />
+                            <Button text="✕ Eliminar" onAction="#eliminarUsuarioAdmin"
+                                    style="-fx-background-color: #EF4444; -fx-text-fill: #FFFFFF;
+                                           -fx-font-weight: bold; -fx-font-size: 11;
+                                           -fx-padding: 7 16; -fx-background-radius: 6; -fx-cursor: hand;" />
+                        </HBox>
+                        <TableView fx:id="tablaAdminUsuarios"
+                                   style="-fx-background-color: #161B2E;
+                                          -fx-border-color: #1E2235;
+                                          -fx-border-radius: 8;">
+                            <columns>
+                                <TableColumn fx:id="colAdminUsuarioId" text="ID" prefWidth="100" />
+                                <TableColumn fx:id="colAdminUsuarioNombre" text="Nombre" prefWidth="280" />
+                                <TableColumn fx:id="colAdminUsuarioCorreo" text="Correo" prefWidth="280" />
+                            </columns>
+                        </TableView>
+                    </VBox>
+                </content>
+            </Tab>
+
+            <!-- TAB RECINTOS -->
+            <Tab text="  Recintos  ">
+                <content>
+                    <ScrollPane fitToWidth="true"
+                                style="-fx-background-color: #0F1117; -fx-background: #0F1117;">
+                        <content>
+                            <VBox spacing="16" style="-fx-padding: 20; -fx-background-color: #0F1117;">
+
+                                <!-- Recintos -->
+                                <VBox style="-fx-background-color: #161B2E; -fx-background-radius: 10;
+                                             -fx-border-color: #1E2235; -fx-border-radius: 10; -fx-border-width: 1;">
+                                    <HBox style="-fx-padding: 12 16; -fx-border-color: #1E2235;
+                                                 -fx-border-width: 0 0 1 0; -fx-alignment: center-left;">
+                                        <Label text="🏟  Recintos"
+                                               style="-fx-text-fill: #FFFFFF; -fx-font-size: 12; -fx-font-weight: bold;" />
+                                    </HBox>
+                                    <VBox spacing="10" style="-fx-padding: 14 16;">
+                                        <HBox spacing="8" style="-fx-alignment: center-left;">
+                                            <TextField fx:id="txtRecintoNombre" promptText="Nombre recinto" prefWidth="180"
+                                                       style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                                              -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                                              -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                                            <TextField fx:id="txtRecintoDireccion" promptText="Dirección" prefWidth="220"
+                                                       style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                                              -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                                              -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                                            <TextField fx:id="txtRecintoCiudad" promptText="Ciudad" prefWidth="130"
+                                                       style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                                              -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                                              -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                                            <Button text="+ Crear recinto" onAction="#crearRecinto"
+                                                    style="-fx-background-color: #6C63FF; -fx-text-fill: #FFFFFF;
+                                                           -fx-font-weight: bold; -fx-font-size: 11;
+                                                           -fx-padding: 7 16; -fx-background-radius: 6; -fx-cursor: hand;" />
+                                            <Button text="✕ Eliminar" onAction="#eliminarRecinto"
+                                                    style="-fx-background-color: #EF4444; -fx-text-fill: #FFFFFF;
+                                                           -fx-font-size: 11; -fx-padding: 7 14;
+                                                           -fx-background-radius: 6; -fx-cursor: hand;" />
+                                        </HBox>
+                                        <TableView fx:id="tablaRecintos" prefHeight="160"
+                                                   style="-fx-background-color: #1E2235; -fx-border-color: #2D3561;">
+                                            <columns>
+                                                <TableColumn fx:id="colRecintoId" text="ID" prefWidth="90" />
+                                                <TableColumn fx:id="colRecintoNombre" text="Nombre" prefWidth="220" />
+                                                <TableColumn fx:id="colRecintoCiudad" text="Ciudad" prefWidth="140" />
+                                                <TableColumn fx:id="colRecintoCapacidad" text="Aforo" prefWidth="90" />
+                                            </columns>
+                                        </TableView>
+                                    </VBox>
+                                </VBox>
+
+                                <!-- Zonas -->
+                                <VBox style="-fx-background-color: #161B2E; -fx-background-radius: 10;
+                                             -fx-border-color: #1E2235; -fx-border-radius: 10; -fx-border-width: 1;">
+                                    <HBox style="-fx-padding: 12 16; -fx-border-color: #1E2235;
+                                                 -fx-border-width: 0 0 1 0; -fx-alignment: center-left;">
+                                        <Label text="📍  Zonas"
+                                               style="-fx-text-fill: #FFFFFF; -fx-font-size: 12; -fx-font-weight: bold;" />
+                                    </HBox>
+                                    <VBox spacing="10" style="-fx-padding: 14 16;">
+                                        <HBox spacing="8" style="-fx-alignment: center-left;">
+                                            <ComboBox fx:id="comboRecintoZona" prefWidth="220"
+                                                      style="-fx-background-color: #1E2235; -fx-background-radius: 6;" />
+                                            <TextField fx:id="txtZonaNombre" promptText="Zona" prefWidth="140"
+                                                       style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                                              -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                                              -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                                            <TextField fx:id="txtZonaCapacidad" promptText="Capacidad" prefWidth="100"
+                                                       style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                                              -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                                              -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                                            <TextField fx:id="txtZonaPrecio" promptText="Precio base" prefWidth="100"
+                                                       style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                                              -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                                              -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                                            <ComboBox fx:id="comboTipoZona" prefWidth="140"
+                                                      style="-fx-background-color: #1E2235; -fx-background-radius: 6;" />
+                                            <Button text="+ Crear zona" onAction="#crearZona"
+                                                    style="-fx-background-color: #6C63FF; -fx-text-fill: #FFFFFF;
+                                                           -fx-font-weight: bold; -fx-font-size: 11;
+                                                           -fx-padding: 7 14; -fx-background-radius: 6; -fx-cursor: hand;" />
+                                            <Button text="✕ Eliminar" onAction="#eliminarZona"
+                                                    style="-fx-background-color: #EF4444; -fx-text-fill: #FFFFFF;
+                                                           -fx-font-size: 11; -fx-padding: 7 14;
+                                                           -fx-background-radius: 6; -fx-cursor: hand;" />
+                                        </HBox>
+                                        <TableView fx:id="tablaZonas" prefHeight="140"
+                                                   style="-fx-background-color: #1E2235; -fx-border-color: #2D3561;">
+                                            <columns>
+                                                <TableColumn fx:id="colZonaId" text="ID" prefWidth="90" />
+                                                <TableColumn fx:id="colZonaNombre" text="Nombre" prefWidth="180" />
+                                                <TableColumn fx:id="colZonaCapacidad" text="Capacidad" prefWidth="100" />
+                                                <TableColumn fx:id="colZonaPrecio" text="Precio" prefWidth="100" />
+                                                <TableColumn fx:id="colZonaOcupacion" text="Ocupación" prefWidth="100" />
+                                            </columns>
+                                        </TableView>
+                                    </VBox>
+                                </VBox>
+
+                                <!-- Asientos -->
+                                <VBox style="-fx-background-color: #161B2E; -fx-background-radius: 10;
+                                             -fx-border-color: #1E2235; -fx-border-radius: 10; -fx-border-width: 1;">
+                                    <HBox style="-fx-padding: 12 16; -fx-border-color: #1E2235;
+                                                 -fx-border-width: 0 0 1 0; -fx-alignment: center-left;">
+                                        <Label text="💺  Asientos"
+                                               style="-fx-text-fill: #FFFFFF; -fx-font-size: 12; -fx-font-weight: bold;" />
+                                    </HBox>
+                                    <VBox spacing="10" style="-fx-padding: 14 16;">
+                                        <HBox spacing="8" style="-fx-alignment: center-left;">
+                                            <ComboBox fx:id="comboZonaAsiento" prefWidth="220"
+                                                      style="-fx-background-color: #1E2235; -fx-background-radius: 6;" />
+                                            <TextField fx:id="txtAsientoFila" promptText="Fila" prefWidth="80"
+                                                       style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                                              -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                                              -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                                            <TextField fx:id="txtAsientoNumero" promptText="Número" prefWidth="80"
+                                                       style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                                              -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                                              -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                                            <ComboBox fx:id="comboEstadoAsiento" prefWidth="150"
+                                                      style="-fx-background-color: #1E2235; -fx-background-radius: 6;" />
+                                            <Button text="+ Crear asiento" onAction="#crearAsiento"
+                                                    style="-fx-background-color: #6C63FF; -fx-text-fill: #FFFFFF;
+                                                           -fx-font-weight: bold; -fx-font-size: 11;
+                                                           -fx-padding: 7 14; -fx-background-radius: 6; -fx-cursor: hand;" />
+                                            <Button text="Cambiar estado" onAction="#cambiarEstadoAsiento"
+                                                    style="-fx-background-color: #F59E0B; -fx-text-fill: #000000;
+                                                           -fx-font-weight: bold; -fx-font-size: 11;
+                                                           -fx-padding: 7 14; -fx-background-radius: 6; -fx-cursor: hand;" />
+                                        </HBox>
+                                        <TableView fx:id="tablaAsientos" prefHeight="160"
+                                                   style="-fx-background-color: #1E2235; -fx-border-color: #2D3561;">
+                                            <columns>
+                                                <TableColumn fx:id="colAsientoId" text="ID" prefWidth="140" />
+                                                <TableColumn fx:id="colAsientoFila" text="Fila" prefWidth="90" />
+                                                <TableColumn fx:id="colAsientoNumero" text="Número" prefWidth="90" />
+                                                <TableColumn fx:id="colAsientoEstado" text="Estado" prefWidth="140" />
+                                            </columns>
+                                        </TableView>
+                                    </VBox>
+                                </VBox>
+                            </VBox>
+                        </content>
+                    </ScrollPane>
+                </content>
+            </Tab>
+
+            <!-- TAB EVENTOS -->
+            <Tab text="  Eventos  ">
+                <content>
+                    <VBox spacing="14" style="-fx-padding: 20; -fx-background-color: #0F1117;">
+                        <GridPane hgap="10" vgap="10">
+                            <TextField fx:id="txtEventoNombre" promptText="Nombre del evento"
+                                       GridPane.rowIndex="0" GridPane.columnIndex="0" prefWidth="180"
+                                       style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                              -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                              -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                            <TextField fx:id="txtEventoCategoria" promptText="Categoría"
+                                       GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="140"
+                                       style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                              -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                              -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                            <TextField fx:id="txtEventoCiudad" promptText="Ciudad"
+                                       GridPane.rowIndex="0" GridPane.columnIndex="2" prefWidth="130"
+                                       style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                              -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                              -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                            <DatePicker fx:id="dpEventoFecha" promptText="Fecha"
+                                        GridPane.rowIndex="0" GridPane.columnIndex="3" prefWidth="130"
+                                        style="-fx-background-color: #1E2235; -fx-background-radius: 6;" />
+                            <ComboBox fx:id="comboEventoRecinto"
+                                      GridPane.rowIndex="0" GridPane.columnIndex="4" prefWidth="200"
+                                      style="-fx-background-color: #1E2235; -fx-background-radius: 6;" />
+                            <ComboBox fx:id="comboEventoEstado"
+                                      GridPane.rowIndex="0" GridPane.columnIndex="5" prefWidth="140"
+                                      style="-fx-background-color: #1E2235; -fx-background-radius: 6;" />
+                            <TextArea fx:id="txtEventoDescripcion" promptText="Descripción del evento"
+                                      GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="4"
+                                      prefRowCount="2"
+                                      style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                             -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;" />
+                            <Button text="+ Crear evento" onAction="#crearEvento"
+                                    GridPane.rowIndex="1" GridPane.columnIndex="4"
+                                    style="-fx-background-color: #6C63FF; -fx-text-fill: #FFFFFF;
+                                           -fx-font-weight: bold; -fx-font-size: 11;
+                                           -fx-padding: 7 14; -fx-background-radius: 6; -fx-cursor: hand;" />
+                            <Button text="↺ Actualizar estado" onAction="#actualizarEstadoEvento"
+                                    GridPane.rowIndex="1" GridPane.columnIndex="5"
+                                    style="-fx-background-color: #F59E0B; -fx-text-fill: #000000;
+                                           -fx-font-weight: bold; -fx-font-size: 11;
+                                           -fx-padding: 7 14; -fx-background-radius: 6; -fx-cursor: hand;" />
+                        </GridPane>
+                        <HBox spacing="8">
+                            <Button text="✕ Eliminar evento" onAction="#eliminarEvento"
+                                    style="-fx-background-color: #EF4444; -fx-text-fill: #FFFFFF;
+                                           -fx-font-weight: bold; -fx-font-size: 11;
+                                           -fx-padding: 7 16; -fx-background-radius: 6; -fx-cursor: hand;" />
+                        </HBox>
+                        <TableView fx:id="tablaAdminEventos"
+                                   style="-fx-background-color: #161B2E;
+                                          -fx-border-color: #1E2235; -fx-border-radius: 8;">
+                            <columns>
+                                <TableColumn fx:id="colAdminEventoId" text="ID" prefWidth="90" />
+                                <TableColumn fx:id="colAdminEventoNombre" text="Nombre" prefWidth="260" />
+                                <TableColumn fx:id="colAdminEventoEstado" text="Estado" prefWidth="130" />
+                                <TableColumn fx:id="colAdminEventoRecinto" text="Recinto" prefWidth="230" />
+                            </columns>
+                        </TableView>
+                    </VBox>
+                </content>
+            </Tab>
+
+            <!-- TAB COMPRAS E INCIDENCIAS -->
+            <Tab text="  Compras e Incidencias  ">
+                <content>
+                    <VBox spacing="16" style="-fx-padding: 20; -fx-background-color: #0F1117;">
+
+                        <!-- Compras -->
+                        <VBox style="-fx-background-color: #161B2E; -fx-background-radius: 10;
+                                     -fx-border-color: #1E2235; -fx-border-radius: 10; -fx-border-width: 1;">
+                            <HBox style="-fx-padding: 12 16; -fx-border-color: #1E2235;
+                                         -fx-border-width: 0 0 1 0; -fx-alignment: center-left;">
+                                <Label text="🛒  Gestión de Compras"
+                                       style="-fx-text-fill: #FFFFFF; -fx-font-size: 12; -fx-font-weight: bold;" />
+                            </HBox>
+                            <VBox spacing="10" style="-fx-padding: 14 16;">
+                                <HBox spacing="10">
+                                    <Button text="✓ Confirmar compra" onAction="#confirmarCompraAdmin"
+                                            style="-fx-background-color: #10B981; -fx-text-fill: #FFFFFF;
+                                                   -fx-font-weight: bold; -fx-font-size: 11;
+                                                   -fx-padding: 8 16; -fx-background-radius: 6; -fx-cursor: hand;" />
+                                    <Button text="✕ Cancelar compra" onAction="#cancelarCompraAdmin"
+                                            style="-fx-background-color: #EF4444; -fx-text-fill: #FFFFFF;
+                                                   -fx-font-weight: bold; -fx-font-size: 11;
+                                                   -fx-padding: 8 16; -fx-background-radius: 6; -fx-cursor: hand;" />
+                                    <Button text="↩ Reembolsar" onAction="#reembolsarCompraAdmin"
+                                            style="-fx-background-color: #F59E0B; -fx-text-fill: #000000;
+                                                   -fx-font-weight: bold; -fx-font-size: 11;
+                                                   -fx-padding: 8 16; -fx-background-radius: 6; -fx-cursor: hand;" />
+                                </HBox>
+                                <TableView fx:id="tablaAdminCompras" prefHeight="200"
+                                           style="-fx-background-color: #1E2235; -fx-border-color: #2D3561;">
+                                    <columns>
+                                        <TableColumn fx:id="colAdminCompraId" text="ID" prefWidth="90" />
+                                        <TableColumn fx:id="colAdminCompraUsuario" text="Usuario" prefWidth="200" />
+                                        <TableColumn fx:id="colAdminCompraEvento" text="Evento" prefWidth="220" />
+                                        <TableColumn fx:id="colAdminCompraEstado" text="Estado" prefWidth="130" />
+                                        <TableColumn fx:id="colAdminCompraTotal" text="Total" prefWidth="110" />
+                                    </columns>
+                                </TableView>
+                            </VBox>
+                        </VBox>
+
+                        <!-- Incidencias -->
+                        <VBox style="-fx-background-color: #161B2E; -fx-background-radius: 10;
+                                     -fx-border-color: #1E2235; -fx-border-radius: 10; -fx-border-width: 1;">
+                            <HBox style="-fx-padding: 12 16; -fx-border-color: #1E2235;
+                                         -fx-border-width: 0 0 1 0; -fx-alignment: center-left;">
+                                <Label text="⚠  Incidencias"
+                                       style="-fx-text-fill: #FFFFFF; -fx-font-size: 12; -fx-font-weight: bold;" />
+                            </HBox>
+                            <VBox spacing="10" style="-fx-padding: 14 16;">
+                                <HBox spacing="10" style="-fx-alignment: center-left;">
+                                    <TextField fx:id="txtIncidenciaTipo" promptText="Tipo" prefWidth="140"
+                                               style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                                      -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                                      -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                                    <TextField fx:id="txtIncidenciaEntidad" promptText="Entidad afectada" prefWidth="160"
+                                               style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                                      -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;
+                                                      -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
+                                    <TextArea fx:id="txtIncidenciaDescripcion" promptText="Descripción" prefRowCount="2" prefWidth="340"
+                                              style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
+                                                     -fx-prompt-text-fill: #4B5563; -fx-border-color: #2D3561;" />
+                                    <Button text="⚠ Registrar incidencia" onAction="#registrarIncidencia"
+                                            style="-fx-background-color: #F59E0B; -fx-text-fill: #000000;
+                                                   -fx-font-weight: bold; -fx-font-size: 11;
+                                                   -fx-padding: 8 16; -fx-background-radius: 6; -fx-cursor: hand;" />
+                                </HBox>
+                                <TableView fx:id="tablaIncidencias" prefHeight="160"
+                                           style="-fx-background-color: #1E2235; -fx-border-color: #2D3561;">
+                                    <columns>
+                                        <TableColumn fx:id="colIncidenciaId" text="ID" prefWidth="90" />
+                                        <TableColumn fx:id="colIncidenciaTipo" text="Tipo" prefWidth="160" />
+                                        <TableColumn fx:id="colIncidenciaEntidad" text="Entidad" prefWidth="180" />
+                                        <TableColumn fx:id="colIncidenciaFecha" text="Fecha" prefWidth="120" />
+                                    </columns>
+                                </TableView>
+                            </VBox>
+                        </VBox>
+                    </VBox>
+                </content>
+            </Tab>
+
+            <!-- TAB METRICAS -->
+            <Tab text="  Métricas  ">
+                <content>
+                    <ScrollPane fitToWidth="true"
+                                style="-fx-background-color: #0F1117; -fx-background: #0F1117;">
+                        <content>
+                            <VBox spacing="16" style="-fx-padding: 20; -fx-background-color: #0F1117;">
+                                <HBox spacing="12"
+                                      style="-fx-background-color: #161B2E;
+                                             -fx-padding: 14 16;
+                                             -fx-background-radius: 10;
+                                             -fx-border-color: #1E2235;
+                                             -fx-border-radius: 10;
+                                             -fx-border-width: 1;
+                                             -fx-alignment: center-left;">
+                                    <Label text="📊"
+                                           style="-fx-font-size: 18;" />
+                                    <Label fx:id="lblMetricasResumen"
+                                           style="-fx-text-fill: #FFFFFF;
+                                                  -fx-font-size: 13;
+                                                  -fx-font-weight: bold;" />
+                                </HBox>
+                                <HBox spacing="10" style="-fx-alignment: center-left;">
+                                    <ComboBox fx:id="comboTipoReporte" prefWidth="170"
+                                              style="-fx-background-color: #1E2235; -fx-background-radius: 6;" />
+                                    <DatePicker fx:id="dpReporteInicio" promptText="Fecha inicio" prefWidth="140"
+                                                style="-fx-background-color: #1E2235; -fx-background-radius: 6;" />
+                                    <DatePicker fx:id="dpReporteFin" promptText="Fecha fin" prefWidth="140"
+                                                style="-fx-background-color: #1E2235; -fx-background-radius: 6;" />
+                                    <Button text="⬇ Reporte CSV" onAction="#exportarReporteCSV"
+                                            style="-fx-background-color: #1E2235; -fx-text-fill: #10B981;
+                                                   -fx-border-color: #10B981; -fx-border-radius: 6;
+                                                   -fx-font-weight: bold; -fx-font-size: 11;
+                                                   -fx-padding: 7 16; -fx-background-radius: 6; -fx-cursor: hand;" />
+                                    <Button text="⬇ Reporte PDF" onAction="#exportarReportePDF"
+                                            style="-fx-background-color: #1E2235; -fx-text-fill: #EF4444;
+                                                   -fx-border-color: #EF4444; -fx-border-radius: 6;
+                                                   -fx-font-weight: bold; -fx-font-size: 11;
+                                                   -fx-padding: 7 16; -fx-background-radius: 6; -fx-cursor: hand;" />
+                                </HBox>
+                                <HBox spacing="16">
+                                    <BarChart fx:id="chartComprasEstado" legendVisible="false"
+                                              prefHeight="280" prefWidth="420"
+                                              style="-fx-background-color: #161B2E; -fx-background-radius: 10;">
+                                        <xAxis>
+                                            <CategoryAxis label="Estado" />
+                                        </xAxis>
+                                        <yAxis>
+                                            <NumberAxis label="Cantidad" />
+                                        </yAxis>
+                                    </BarChart>
+                                    <PieChart fx:id="chartEventosEstado"
+                                              prefHeight="280" prefWidth="380"
+                                              style="-fx-background-color: #161B2E; -fx-background-radius: 10;" />
+                                </HBox>
+                                <LineChart fx:id="chartIngresos" prefHeight="280"
+                                           style="-fx-background-color: #161B2E; -fx-background-radius: 10;">
+                                    <xAxis>
+                                        <CategoryAxis label="Fecha" />
+                                    </xAxis>
+                                    <yAxis>
+                                        <NumberAxis label="Ingresos ($)" />
+                                    </yAxis>
+                                </LineChart>
+                            </VBox>
+                        </content>
+                    </ScrollPane>
+                </content>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>
