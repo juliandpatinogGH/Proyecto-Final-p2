@@ -32,7 +32,7 @@
                 <Label text="⬡"
                        style="-fx-text-fill: #6C63FF; -fx-font-size: 22;" />
                 <VBox style="-fx-alignment: center-left;">
-                    <Label text="EVENTIX"
+                    <Label text="EVENTOS ONLINE"
                            style="-fx-text-fill: #FFFFFF;
                                   -fx-font-size: 15;
                                   -fx-font-weight: bold;" />
