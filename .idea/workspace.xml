@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5d74714-d14b-42b5-bcd2-d953e0b09b8f" name="Changes" comment="chore: agregar .gitignore y estructura base de Maven (RF-048)" />
+    <list default="true" id="e5d74714-d14b-42b5-bcd2-d953e0b09b8f" name="Changes" comment="chore: agregar .gitignore y estructura base de Maven (RF-048)">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,9 +52,11 @@
     "Application.Main.executor": "Run",
     "Application.Unnamed.executor": "Coverage",
     "Maven.ProyectoFinal [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Julian-Rama",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/julia/OneDrive/Documentos/GitHub/Proyecto-Final-p2",
@@ -110,6 +114,7 @@
       <updated>1779246440929</updated>
       <workItem from="1779489184422" duration="22717000" />
       <workItem from="1779629895494" duration="14000" />
+      <workItem from="1779631794455" duration="779000" />
     </task>
     <task id="LOCAL-00001" summary="chore: agregar .gitignore y estructura base de Maven (RF-048)">
       <option name="closed" value="true" />
