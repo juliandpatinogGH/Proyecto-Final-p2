@@ -6,6 +6,12 @@ public class Asiento {
     private int numero;
     private EstadoAsiento estado;
 
+
+
+
+
+
+
     public Asiento(String idAsiento, String fila, int numero, EstadoAsiento estado) {
         this.idAsiento = idAsiento;
         this.fila = fila;
@@ -13,6 +19,10 @@ public class Asiento {
         this.estado = estado;
     }
 
+
+
+
+    
     public String getIdAsiento() { return idAsiento; }
     public void setIdAsiento(String idAsiento) { this.idAsiento = idAsiento; }
 
