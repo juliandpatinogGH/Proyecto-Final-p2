@@ -57,8 +57,15 @@ public class UsuarioController {
 
     private void cargarUsuarios() {
         comboUsuario.setItems(FXCollections.observableArrayList(gestion.getUsuarios()));
+        comboUsuario.setConverter(new javafx.util.StringConverter<Usuario>() {
+            @Override
+            public String toString(Usuario u) {
+                return u == null ? "" : u.getNombre();
+            }
+            @Override
+            public Usuario fromString(String s) { return null; }
+        });
     }
-
     private void cargarEventos() {
         tablaEventos.setItems(FXCollections.observableArrayList(gestion.getEventos()));
     }
