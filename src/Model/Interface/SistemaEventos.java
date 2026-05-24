@@ -1,4 +1,4 @@
-package Model;
+package Model.Interface;
 
 public interface SistemaEventos {
     void gestionarEventos();

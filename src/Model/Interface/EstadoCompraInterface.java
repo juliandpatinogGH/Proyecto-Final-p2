@@ -1,4 +1,6 @@
-package Model;
+package Model.Interface;
+
+import Model.Compra;
 
 public interface EstadoCompraInterface {
     void pagar(Compra compra);

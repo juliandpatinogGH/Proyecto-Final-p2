@@ -1,4 +1,4 @@
-package Model;
+package Model.Interface;
 
 public interface Observable {
     void agregarObservador(Observador o);
