@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5d74714-d14b-42b5-bcd2-d953e0b09b8f" name="Changes" comment="chore: agregar .gitignore y estructura base de Maven (RF-048)">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_05_2026_9_07_a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_05_2026_9_07_a_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_05_2026_9_07_a_m___Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_05_2026_9_07_a_m___Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Asiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Asiento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/App/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/App/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/admin-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/admin-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/View/user-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/user-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

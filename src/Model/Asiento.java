@@ -22,7 +22,7 @@ public class Asiento {
 
 
 
-    
+
     public String getIdAsiento() { return idAsiento; }
     public void setIdAsiento(String idAsiento) { this.idAsiento = idAsiento; }
 
