@@ -1,0 +1,107 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_22\" default=\"true\" project-jdk-name=\"22\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision c785c521f4bad7a9400a85100e9d33eb898b3629)
++++ b/.idea/misc.xml	(date 1779631177854)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
+   <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="22" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e5d74714-d14b-42b5-bcd2-d953e0b09b8f\" name=\"Changes\" comment=\"chore: agregar .gitignore y estructura base de Maven (RF-048)\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/modules.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ProyectoFinal.iml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Administrador.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Asiento.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Compra.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/EntidadAfectada.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Entrada.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/EntradaBase.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/EntradaDecorator.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/EstadoAsiento.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/EstadoCancelada.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/EstadoCompraEnum.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/EstadoCompraInterface.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/EstadoConfirmada.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/EstadoCreada.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/EstadoEntrada.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/EstadoEvento.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/EstadoPagada.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Evento.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/GestionEventos.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Incidencia.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Main.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/MetodoPago.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Observable.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Observador.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Pago.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/PagoEfectivo.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/PagoLinea.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/PagoTarjeta.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/PagoTransferencia.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/ParqueaderoDecorator.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Persona.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Politicas.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/PreferencialDecorator.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/ProcesoPagoFacade.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Recinto.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/SeguroDecorator.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/SistemaEventos.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/SistemaProxy.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/SistemaReal.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Tarifa.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/TipoCompra.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/TipoEvento.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Usuario.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/VipDecorator.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Zona.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"3DyFX19XynDksy21RxDzl7do1WX\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"OscarProyect\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/ProyectoFinal/src\",\r\n    \"onboarding.tips.debug.path\": \"C:/ProyectoFinal/src/Main.java\",\r\n    \"settings.editor.selected.configurable\": \"configurable.group.appearance\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\ProyectoFinal\\src\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\ProyectoFinal\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e5d74714-d14b-42b5-bcd2-d953e0b09b8f\" name=\"Changes\" comment=\"\" />\r\n      <created>1779246440929</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1779246440929</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"chore: agregar .gitignore y estructura base de Maven (RF-048)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1779253141974</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1779253141974</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"HEAD\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"chore: agregar .gitignore y estructura base de Maven (RF-048)\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"chore: agregar .gitignore y estructura base de Maven (RF-048)\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision c785c521f4bad7a9400a85100e9d33eb898b3629)
++++ b/.idea/workspace.xml	(date 1779631523805)
+@@ -5,55 +5,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="e5d74714-d14b-42b5-bcd2-d953e0b09b8f" name="Changes" comment="chore: agregar .gitignore y estructura base de Maven (RF-048)">
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ProyectoFinal.iml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Administrador.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Asiento.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Compra.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/EntidadAfectada.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Entrada.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/EntradaBase.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/EntradaDecorator.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/EstadoAsiento.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/EstadoCancelada.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/EstadoCompraEnum.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/EstadoCompraInterface.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/EstadoConfirmada.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/EstadoCreada.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/EstadoEntrada.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/EstadoEvento.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/EstadoPagada.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Evento.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/GestionEventos.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Incidencia.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/MetodoPago.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Observable.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Observador.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Pago.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/PagoEfectivo.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/PagoLinea.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/PagoTarjeta.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/PagoTransferencia.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/ParqueaderoDecorator.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Persona.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Politicas.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/PreferencialDecorator.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/ProcesoPagoFacade.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Recinto.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/SeguroDecorator.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/SistemaEventos.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/SistemaProxy.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/SistemaReal.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Tarifa.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/TipoCompra.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/TipoEvento.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Usuario.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/VipDecorator.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Zona.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -67,7 +21,6 @@
+   &quot;associatedIndex&quot;: 8
+ }</component>
+   <component name="ProjectId" id="3DyFX19XynDksy21RxDzl7do1WX" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -75,9 +28,11 @@
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "OscarProyect",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "git-widget-placeholder": "sarasofiasalazar",
+     "kotlin-language-version-configured": "true",
+     "last_opened_file_path": "C:/ProyectoFinal/src",
++    "node.js.selected.package.tslint": "(autodetect)",
+     "onboarding.tips.debug.path": "C:/ProyectoFinal/src/Main.java",
+     "settings.editor.selected.configurable": "configurable.group.appearance"
+   }
