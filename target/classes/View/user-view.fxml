@@ -165,7 +165,7 @@
                                                   -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
                                 <DatePicker fx:id="filtroFecha" promptText="Fecha" prefWidth="130"
                                             style="-fx-background-color: #1E2235; -fx-background-radius: 6;" />
-                                <Button text="🔍 Filtrar" onAction="#aplicarFiltros"
+                                <Button text=" Filtrar" onAction="#aplicarFiltros"
                                         style="-fx-background-color: #6C63FF; -fx-text-fill: #FFFFFF;
                                                -fx-font-weight: bold; -fx-font-size: 11;
                                                -fx-padding: 7 16; -fx-background-radius: 6; -fx-cursor: hand;" />
