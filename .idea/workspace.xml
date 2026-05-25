@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5d74714-d14b-42b5-bcd2-d953e0b09b8f" name="Changes" comment="chore: agregar .gitignore y estructura base de Maven (RF-048)">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="sarasofiasalazar" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +39,9 @@
     &quot;accountId&quot;: &quot;08067c0c-15a2-4b92-b9b2-6e6f459809e2&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -54,9 +57,9 @@
     "Maven.ProyectoFinal [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Julian-Rama",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/julia/OneDrive/Documentos/GitHub/Proyecto-Final-p2",
@@ -115,6 +118,7 @@
       <workItem from="1779489184422" duration="22717000" />
       <workItem from="1779629895494" duration="14000" />
       <workItem from="1779631794455" duration="779000" />
+      <workItem from="1779677554866" duration="505000" />
     </task>
     <task id="LOCAL-00001" summary="chore: agregar .gitignore y estructura base de Maven (RF-048)">
       <option name="closed" value="true" />
