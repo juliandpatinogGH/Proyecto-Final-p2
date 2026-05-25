@@ -1,10 +1,12 @@
 package Model;
 
+import Model.Interface.MetodoPago;
+
 public class ProcesoPagoFacade {
     private Compra compra;
     private MetodoPago metodoPago;
 
-    public ProcesoPagoFacade(Compra compra, MetodoPago metodoPago) {
+    public ProcesoPagoFacade(Compra compra, PagoTarjeta metodoPago) {
         this.compra = compra;
         this.metodoPago = metodoPago;
     }

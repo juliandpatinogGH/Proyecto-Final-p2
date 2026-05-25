@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Enums.EstadoAsiento;
+
 import java.util.ArrayList;
 import java.util.List;
 

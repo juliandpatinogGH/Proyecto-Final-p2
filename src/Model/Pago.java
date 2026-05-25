@@ -1,4 +1,7 @@
 package Model;
+import Model.Interface.MetodoPago;
+
+import Model.Interface.MetodoPago;
 
 import java.util.Date;
 

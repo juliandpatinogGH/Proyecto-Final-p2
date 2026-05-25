@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Enums.EstadoEntrada;
+
 public abstract class Entrada {
     protected String idEntrada;
     protected Zona zona;

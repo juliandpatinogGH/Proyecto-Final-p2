@@ -1,10 +1,18 @@
 package Model;
 
+import Model.Enums.EstadoAsiento;
+
 public class Asiento {
     private String idAsiento;
     private String fila;
     private int numero;
     private EstadoAsiento estado;
+
+
+
+
+
+
 
     public Asiento(String idAsiento, String fila, int numero, EstadoAsiento estado) {
         this.idAsiento = idAsiento;
@@ -12,6 +20,10 @@ public class Asiento {
         this.numero = numero;
         this.estado = estado;
     }
+
+
+
+
 
     public String getIdAsiento() { return idAsiento; }
     public void setIdAsiento(String idAsiento) { this.idAsiento = idAsiento; }
