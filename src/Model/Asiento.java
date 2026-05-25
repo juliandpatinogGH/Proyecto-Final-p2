@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Enums.EstadoAsiento;
+
 public class Asiento {
     private String idAsiento;
     private String fila;

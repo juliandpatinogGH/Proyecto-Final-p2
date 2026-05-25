@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Interface.EstadoCompraInterface;
+
 public class EstadoCancelada implements EstadoCompraInterface {
     @Override
     public void pagar(Compra compra) {

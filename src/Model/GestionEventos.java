@@ -1,5 +1,8 @@
 package Model;
 
+import Model.Interface.Observable;
+import Model.Interface.Observador;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -47,9 +50,11 @@ public class GestionEventos implements Observable {
         return instancia;
     }
 
-    // Observer
+
     @Override
-    public void agregarObservador(Observador o) { observadores.add(o); }
+    public void agregarObservador(Observador o) {
+
+    }
 
     @Override
     public void notificarObservadores() {

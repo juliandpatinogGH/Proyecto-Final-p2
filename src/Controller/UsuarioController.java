@@ -1,14 +1,14 @@
 package Controller;
 
 import Model.*;
+import Model.Enums.EstadoEntrada;
+import Model.Interface.MetodoPago;   // <- agregar esta línea
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-
 import java.util.Date;
 import java.util.List;
-
 public class UsuarioController {
 
     @FXML private ComboBox<Usuario> comboUsuario;

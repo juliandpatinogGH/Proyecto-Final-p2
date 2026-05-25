@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Enums.EstadoEvento;
+
 import java.util.Date;
 
 public class Evento {

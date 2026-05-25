@@ -1,5 +1,8 @@
 package Controller;
 import Model.*;
+import Model.Enums.EntidadAfectada;
+import Model.Enums.EstadoAsiento;
+import Model.Enums.EstadoEvento;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.chart.*;
