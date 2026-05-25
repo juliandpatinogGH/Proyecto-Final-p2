@@ -5,84 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5d74714-d14b-42b5-bcd2-d953e0b09b8f" name="Changes" comment="chore: agregar .gitignore y estructura base de Maven (RF-048)">
-      <change afterPath="$PROJECT_DIR$/src/Model/EstadoEntrada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/MetodoPago.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/EstadoAsiento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UsuarioController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Asiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Asiento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Compra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Compra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Entrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Entrada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EntradaBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EntradaBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EstadoCancelada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EstadoCancelada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EstadoConfirmada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EstadoConfirmada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EstadoCreada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EstadoCreada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EstadoIncidencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EstadoIncidencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EstadoPagada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EstadoPagada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/EstadoReembolsada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EstadoReembolsada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Evento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Evento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Enums/EstadoAsiento.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/GestionEventos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/GestionEventos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Incidencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Incidencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Pago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Pago.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/PagoEfectivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PagoEfectivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/PagoLinea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PagoLinea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/PagoNequi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PagoNequi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/PagoPSE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PagoPSE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/PagoTarjeta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PagoTarjeta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/PagoTransferencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PagoTransferencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/ProcesoPagoFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ProcesoPagoFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/SistemaProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/SistemaProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/SistemaReal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/SistemaReal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Tarifa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Tarifa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Zona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Zona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/user-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/user-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Controller/UsuarioController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Model/Asiento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Asiento.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Compra$CompraBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Compra$CompraBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Compra.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Compra.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/EntidadAfectada.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Entrada.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Entrada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/EntradaBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/EntradaBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/EntradaDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoAsiento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoCancelada.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/EstadoCancelada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoCompraEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoCompraInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoConfirmada.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/EstadoConfirmada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoCreada.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/EstadoCreada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoEntrada.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoEvento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoIncidencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/EstadoIncidencia.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoPagada.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/EstadoPagada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/EstadoReembolsada.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/EstadoReembolsada.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Evento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Evento.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Model/GestionEventos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/GestionEventos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Incidencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Incidencia.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/MetodoPago.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Observable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Observador.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Pago.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Pago.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/PagoEfectivo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/PagoNequi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/PagoNequi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/PagoPSE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/PagoTarjeta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/PagoTarjeta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/ParqueaderoDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Politicas.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/PreferencialDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/ProcesoPagoFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/ProcesoPagoFacade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/SeguroDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/SistemaEventos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/SistemaProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/SistemaProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/SistemaReal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/SistemaReal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Tarifa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Tarifa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/TipoCompra.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/TipoEvento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/VipDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Zona.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Zona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Zona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/View/user-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/View/user-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
