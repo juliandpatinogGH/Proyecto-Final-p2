@@ -17,7 +17,7 @@ public class Evento {
     private String reglas;
 
     public Evento(String idEvento, String nombre, String categoria, String descripcion,
-                  String ciudad, Date fecha, Date hora, int aforo, double precio, String reglas) {
+                  String ciudad, Date fecha, Date hora, Object o, int aforo, double precio, String reglas) {
         this.idEvento = idEvento;
         this.nombre = nombre;
         this.categoria = categoria;
