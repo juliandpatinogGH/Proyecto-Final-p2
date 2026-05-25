@@ -1,10 +1,14 @@
 package Model;
 
+import Model.Enums.TipoCompra;
+import Model.Interface.EstadoCompraInterface;
+
 import java.util.Date;
 import java.util.List;
 import java.util.ArrayList;
 
 public class Compra implements Cloneable {
+
     private String idCompra;
     private Usuario usuario;
     private Evento evento;
@@ -15,6 +19,7 @@ public class Compra implements Cloneable {
     private TipoCompra tipoCompra;
     private List<Entrada> entradas;
 
+    // Constructor privado para Builder
     private Compra() {
         this.entradas = new ArrayList<>();
         this.serviciosAdicionales = new ArrayList<>();
@@ -23,14 +28,30 @@ public class Compra implements Cloneable {
         this.fechaCreacion = new Date();
     }
 
+    // =========================
+    // MÉTODOS STATE
+    // =========================
 
-    public void pagar()    { estado.pagar(this); }
-    public void cancelar() { estado.cancelar(this); }
-    public void confirmar(){ estado.confirmar(this); }
+    public void pagar() {
+        estado.pagar(this);
+    }
 
-    public void setEstado(EstadoCompraInterface estado) { this.estado = estado; }
+    public void cancelar() {
+        estado.cancelar(this);
+    }
 
-    // Agregar y eliminar entradas
+    public void confirmar() {
+        estado.confirmar(this);
+    }
+
+    public void setEstado(EstadoCompraInterface estado) {
+        this.estado = estado;
+    }
+
+    // =========================
+    // GESTIÓN DE ENTRADAS
+    // =========================
+
     public void agregarEntrada(Entrada entrada) {
         entradas.add(entrada);
         calcularTotal();
@@ -41,7 +62,10 @@ public class Compra implements Cloneable {
         calcularTotal();
     }
 
-    // Agregar y eliminar servicios
+    // =========================
+    // GESTIÓN DE SERVICIOS
+    // =========================
+
     public void agregarServicio(ServiciosAdicionales servicio) {
         serviciosAdicionales.add(servicio);
         calcularTotal();
@@ -52,49 +76,114 @@ public class Compra implements Cloneable {
         calcularTotal();
     }
 
+    // =========================
+    // CÁLCULO TOTAL
+    // =========================
 
     public void calcularTotal() {
-        this.total = 0;
-        for (Entrada e : entradas) {
-            this.total += e.getCosto();
+        total = 0;
+
+        for (Entrada entrada : entradas) {
+            total += entrada.getCosto();
         }
-        for (ServiciosAdicionales s : serviciosAdicionales) {
-            this.total += s.getCosto();
+
+        for (ServiciosAdicionales servicio : serviciosAdicionales) {
+            total += servicio.getCosto();
         }
     }
 
+    // =========================
+    // GETTERS
+    // =========================
 
-    public String getIdCompra()                                  { return idCompra; }
-    public Usuario getUsuario()                                  { return usuario; }
-    public Evento getEvento()                                    { return evento; }
-    public Date getFechaCreacion()                               { return fechaCreacion; }
-    public double getTotal()                                     { return total; }
-    public TipoCompra getTipoCompra()                            { return tipoCompra; }
-    public List<Entrada> getEntradas()                           { return entradas; }
-    public List<ServiciosAdicionales> getServiciosAdicionales()  { return serviciosAdicionales; }
-    public EstadoCompraInterface getEstado()                     { return estado; }
+    public String getIdCompra() {
+        return idCompra;
+    }
 
-    // Prototype
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public Evento getEvento() {
+        return evento;
+    }
+
+    public Date getFechaCreacion() {
+        return fechaCreacion;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public EstadoCompraInterface getEstado() {
+        return estado;
+    }
+
+    public List<ServiciosAdicionales> getServiciosAdicionales() {
+        return serviciosAdicionales;
+    }
+
+    public TipoCompra getTipoCompra() {
+        return tipoCompra;
+    }
+
+    public List<Entrada> getEntradas() {
+        return entradas;
+    }
+
+    // =========================
+    // PROTOTYPE
+    // =========================
+
     @Override
     public Compra clone() {
         try {
+
             Compra clon = (Compra) super.clone();
+
+            // Clonado de listas
             clon.entradas = new ArrayList<>(this.entradas);
             clon.serviciosAdicionales = new ArrayList<>(this.serviciosAdicionales);
+
             return clon;
+
         } catch (CloneNotSupportedException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Error al clonar la compra", e);
         }
     }
 
-    // Builder
-    public static class CompraBuilder {
-        private final Compra compra = new Compra();
+    // =========================
+    // BUILDER
+    // =========================
 
-        public CompraBuilder idCompra(String id)         { compra.idCompra = id; return this; }
-        public CompraBuilder usuario(Usuario u)          { compra.usuario = u; return this; }
-        public CompraBuilder evento(Evento e)            { compra.evento = e; return this; }
-        public CompraBuilder tipoCompra(TipoCompra tipo) { compra.tipoCompra = tipo; return this; }
+    public static class CompraBuilder {
+
+        private final Compra compra;
+
+        public CompraBuilder() {
+            compra = new Compra();
+        }
+
+        public CompraBuilder idCompra(String idCompra) {
+            compra.idCompra = idCompra;
+            return this;
+        }
+
+        public CompraBuilder usuario(Usuario usuario) {
+            compra.usuario = usuario;
+            return this;
+        }
+
+        public CompraBuilder evento(Evento evento) {
+            compra.evento = evento;
+            return this;
+        }
+
+        public CompraBuilder tipoCompra(TipoCompra tipoCompra) {
+            compra.tipoCompra = tipoCompra;
+            return this;
+        }
 
         public CompraBuilder agregarEntrada(Entrada entrada) {
             compra.entradas.add(entrada);
@@ -106,16 +195,23 @@ public class Compra implements Cloneable {
             return this;
         }
 
-        public CompraBuilder fechaCreacion(Date d) {
-            compra.fechaCreacion = d;
+        public CompraBuilder fechaCreacion(Date fechaCreacion) {
+            compra.fechaCreacion = fechaCreacion;
             return this;
         }
 
         public Compra build() {
-            if (compra.usuario == null || compra.evento == null) {
-                throw new IllegalStateException("Model.Usuario y Model.Evento son obligatorios");
+
+            if (compra.usuario == null) {
+                throw new IllegalStateException("El usuario es obligatorio");
             }
+
+            if (compra.evento == null) {
+                throw new IllegalStateException("El evento es obligatorio");
+            }
+
             compra.calcularTotal();
+
             return compra;
         }
     }

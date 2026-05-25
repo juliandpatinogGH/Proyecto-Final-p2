@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Interface.SistemaEventos;
+
 public class SistemaProxy implements SistemaEventos {
     private String perfil;
     private SistemaReal sistema;

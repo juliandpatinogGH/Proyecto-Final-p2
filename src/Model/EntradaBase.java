@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Enums.EstadoEntrada;
+
 public class EntradaBase extends Entrada implements Cloneable {
 
     public EntradaBase(String idEntrada, Zona zona, double precioBase, EstadoEntrada estadoEntrada) {

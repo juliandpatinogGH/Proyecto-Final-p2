@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Interface.Observador;
+
 public class Usuario extends Persona implements Observador {
     private String idUsuario;
 

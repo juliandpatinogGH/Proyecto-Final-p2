@@ -1,7 +1,5 @@
 package Model;
 
 public enum EstadoEntrada {
-    ACTIVA,
-    USADA,
-    ANULADA
+    ACTIVA, CANCELADA, USADA
 }

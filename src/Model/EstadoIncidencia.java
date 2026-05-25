@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Interface.EstadoCompraInterface;
+
 public class EstadoIncidencia implements EstadoCompraInterface {
     @Override public void pagar(Compra compra) {
         System.out.println("No se puede pagar, la compra tiene una incidencia.");

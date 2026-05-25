@@ -1,5 +1,7 @@
 package Model;
 
+import Model.Enums.EntidadAfectada;
+
 import java.util.Date;
 
 public class Incidencia {

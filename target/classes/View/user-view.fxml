@@ -11,15 +11,12 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.geometry.Insets?>
 
-<?import javax.swing.text.html.TableView?>
 <BorderPane xmlns:fx="http://javafx.com/fxml"
             fx:controller="Controller.UsuarioController"
             style="-fx-background-color: #0F1117;">
@@ -153,7 +150,6 @@
                                           -fx-font-weight: bold;" />
                         </HBox>
                         <VBox spacing="12" style="-fx-padding: 16 20;">
-                            <!-- Filtros -->
                             <HBox spacing="8" style="-fx-alignment: center-left;">
                                 <TextField fx:id="txtFiltroCiudad" promptText="Ciudad" prefWidth="120"
                                            style="-fx-background-color: #1E2235; -fx-text-fill: #FFFFFF;
@@ -169,7 +165,7 @@
                                                   -fx-border-radius: 6; -fx-background-radius: 6; -fx-padding: 7 10;" />
                                 <DatePicker fx:id="filtroFecha" promptText="Fecha" prefWidth="130"
                                             style="-fx-background-color: #1E2235; -fx-background-radius: 6;" />
-                                <Button text="🔍 Filtrar" onAction="#aplicarFiltros"
+                                <Button text=" Filtrar" onAction="#aplicarFiltros"
                                         style="-fx-background-color: #6C63FF; -fx-text-fill: #FFFFFF;
                                                -fx-font-weight: bold; -fx-font-size: 11;
                                                -fx-padding: 7 16; -fx-background-radius: 6; -fx-cursor: hand;" />
@@ -179,7 +175,6 @@
                                                -fx-background-radius: 6; -fx-cursor: hand;" />
                             </HBox>
 
-                            <!-- Tabla + Detalle -->
                             <SplitPane dividerPositions="0.58" prefHeight="240"
                                        style="-fx-background-color: transparent;">
                                 <TableView fx:id="tablaEventos"
@@ -201,7 +196,6 @@
                                                  -fx-border-color: #2D3561;" />
                             </SplitPane>
 
-                            <!-- Selección -->
                             <HBox spacing="10" style="-fx-alignment: center-left;">
                                 <ComboBox fx:id="comboZona" prefWidth="220"
                                           style="-fx-background-color: #1E2235; -fx-background-radius: 6;" />
@@ -211,7 +205,6 @@
                                           style="-fx-background-color: #1E2235; -fx-background-radius: 6;" />
                             </HBox>
 
-                            <!-- Servicios adicionales -->
                             <HBox spacing="6"
                                   style="-fx-background-color: #1E2235;
                                          -fx-padding: 10 14;
@@ -229,7 +222,6 @@
                                           style="-fx-text-fill: #3B82F6;" />
                             </HBox>
 
-                            <!-- Acciones compra -->
                             <HBox spacing="10" style="-fx-alignment: center-left;">
                                 <Label fx:id="lblTotalCompra" text="Total: $0"
                                        style="-fx-text-fill: #6C63FF;
